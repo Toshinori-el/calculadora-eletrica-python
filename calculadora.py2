@@ -1,0 +1,16 @@
+# Calculadora de Cabos Elétricos
+print("="*40)
+print("CALCULADORA DE CABOS")
+print("="*40)
+
+p = float(input("Potência (Watts): "))
+t = float(input("Tensão (Volts): "))
+d = float(input("Distância (metros): "))
+
+c = p / t
+b = (c * d * 2) / (56 * 0.03)
+
+print("="*40)
+print(f"Corrente: {c:.1f} A")
+print(f"Bitola: {b:.1f} mm²")
+print("="*40)
